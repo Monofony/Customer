@@ -1,5 +1,5 @@
 {
-    "name": "sylius/customer",
+    "name": "monofony/customer",
     "type": "library",
     "description": "Customer handling for PHP applications.",
     "keywords": [
@@ -31,15 +31,12 @@
         }
     ],
     "require": {
-        "php": "^7.4",
+        "php": "^7.4 || ^8.0",
         "doctrine/collections": "^1.6",
         "sylius/resource": "^1.0"
     },
     "require-dev": {
         "phpspec/phpspec": "^7.0"
-    },
-    "config": {
-        "bin-dir": "bin"
     },
     "extra": {
         "branch-alias": {
@@ -56,12 +53,6 @@
             "Sylius\\Component\\Customer\\spec\\": "spec/"
         }
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../../*/*"
-        }
-    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
